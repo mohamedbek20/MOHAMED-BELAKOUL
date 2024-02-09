@@ -1,0 +1,125 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+h1:first-of-type{
+    text-shadow: 20px 10px 10px red;
+}
+h2 {
+    text-decoration: underline;
+}
+section h2 {
+    color: green;
+}
+section h2 + p {
+    color: blue;
+    font-style: italic;
+}
+
+.div-animation {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.div-animation:hover {
+    transform: translate(100px, 100px) rotate(40deg);
+}
+
+@media (max-width: 700px) {
+    .div-animation {
+        background-color: red;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .div-animation {
+        background-color: rgb(72, 227, 11);
+    }
+}
+
+.container {
+    width: 70%;
+    height: 400px;
+    margin: 0 auto; 
+    position: relative; 
+    border: 2px solid rgb(241, 238, 7); 
+}
+
+.sous-div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(17, 200, 220);
+    position: absolute;
+}
+
+.centre {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.haut-gauche {
+    top: 0;
+    left: 0;
+}
+
+.haut-droite {
+    top: 0;
+    right: 0;
+}
+
+.bas-gauche {
+    bottom: 0;
+    left: 0;
+}
+
+.bas-droite {
+    bottom: 0;
+    right: 0;
+}
+
+#boite {
+    background-color: red;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation-name: redbox;
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes redbox {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 0;
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    background-color: aquamarine;
+}
+.first-nav-div{
+    height: 50px;
+    width: 100px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-nav{
+    text-align: center;
+    padding: 15px;
+}
+a:hover {
+    color: red;
+}
